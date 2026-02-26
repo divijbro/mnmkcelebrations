@@ -278,4 +278,69 @@ footer {
     margin: 0 auto 20px auto;
     font-size: 1.1rem;
     line-height: 1.6;
+
+}
+/* ===========================
+   PREMIUM CONTACT FORM DESIGN
+=========================== */
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    resize: none;
+}
+
+/* Focus Glow Effect */
+.input-group input:focus,
+.input-group textarea:focus {
+    border: 2px solid #ff4081;
+    box-shadow: 0 0 15px rgba(255, 64, 129, 0.4);
+    background: white;
+}
+
+/* Floating Label */
+.input-group label {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    color: #888;
+    font-size: 0.95rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* When input is focused or has text */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 15px;
+    background: #fff8e1;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    color: #ff4081;
+    border-radius: 10px;
 }
