@@ -6,7 +6,6 @@ form.addEventListener("submit", async function (e) {
     const button = form.querySelector("button");
     const originalText = button.innerText;
 
-    // Show loading state
     button.innerText = "Sending... ⏳";
     button.disabled = true;
 
@@ -39,8 +38,8 @@ form.addEventListener("submit", async function (e) {
         alert("Server not responding.");
     }
 
-    // Restore button
     button.innerText = originalText;
     button.disabled = false;
 
 });
+
