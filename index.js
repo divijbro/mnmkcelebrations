@@ -18,7 +18,7 @@ form.addEventListener("submit", async function (e) {
     };
 
     try {
-        const response = await fetch("https://mnmk-backend.onrender.com/send", {
+        const response = await fetch("https://mnmktestpy.onrender.com/send", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -42,4 +42,5 @@ form.addEventListener("submit", async function (e) {
     // Restore button
     button.innerText = originalText;
     button.disabled = false;
+
 });
