@@ -6,7 +6,7 @@ form.addEventListener("submit", async function (e) {
     const button = form.querySelector("button");
     const originalText = button.innerText;
 
-    button.innerText = "Sending... ⏳";
+    button.innerText = "Sending... ";
     button.disabled = true;
 
     const formData = {
@@ -42,4 +42,5 @@ form.addEventListener("submit", async function (e) {
     button.disabled = false;
 
 });
+
 
